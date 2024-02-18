@@ -36,3 +36,34 @@ Instructions to run locally :
 
     ->to switch user accounts, hit http://localhost:8080/logout and again hit http://localhost:8080/swagger-ui/index.html# on your browser
 
+*** Input format for APIs :
+
+1. signup (POST)
+    URl : http://localhost:8080/api/signup?userName=pranav&password=pranav123
+    body : {}
+
+2. Login
+    URL : http://localhost:8080/login
+    body : {
+                "userName":"pranav",
+                "password":"pranav123"
+           }
+
+2. addWishList (POST)
+    URL : http://localhost:8080/api/wishlists
+    body : {
+               "productName":"pr_name",
+                "price":500.0
+           }
+
+3. getWishList (GET)
+    URl : http://localhost:8080/api/wishLists
+    body : {}
+
+4. deleteWishList (DELETE)
+    URL : http://localhost:8080/api/deleteWishList/{product_id}
+    body : {}
+
+5. logout
+    URL : http://localhost:8080/logout
+    body : {}
