@@ -1,17 +1,14 @@
 package com.pranav.wishlist;
 
 import com.pranav.wishlist.DTO.requestDTO.WishlistRequest;
-import com.pranav.wishlist.configFiles.CustomUserDetailsService;
-import com.pranav.wishlist.model.UserInformation;
+import com.pranav.wishlist.securityConfigFiles.CustomUserDetailsService;
 import com.pranav.wishlist.model.Wishlist;
-import com.pranav.wishlist.model.config.User;
 import com.pranav.wishlist.repository.UserInformationRepo;
 import com.pranav.wishlist.repository.WishlistRepo;
 import com.pranav.wishlist.repository.config.UserRepo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

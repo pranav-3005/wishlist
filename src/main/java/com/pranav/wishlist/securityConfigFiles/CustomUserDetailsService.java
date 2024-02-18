@@ -1,4 +1,4 @@
-package com.pranav.wishlist.configFiles;
+package com.pranav.wishlist.securityConfigFiles;
 
 import com.pranav.wishlist.model.config.User;
 import com.pranav.wishlist.repository.config.UserRepo;
@@ -14,6 +14,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     private static User currentUser;
 
+    //To get current login-user's details
     public static User getCurrentUser() {
         return currentUser;
     }
@@ -25,8 +26,6 @@ public class CustomUserDetailsService implements UserDetailsService {
         {
             throw new UsernameNotFoundException("Invalid username !!!");
         }
-
-        //step 2
 
         currentUser=user;
         return new UserDetailsCreator(user);

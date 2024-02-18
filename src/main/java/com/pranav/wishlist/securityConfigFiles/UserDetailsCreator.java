@@ -1,10 +1,9 @@
-package com.pranav.wishlist.configFiles;
+package com.pranav.wishlist.securityConfigFiles;
 
 import com.pranav.wishlist.model.config.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.ArrayList;
 import java.util.Collection;

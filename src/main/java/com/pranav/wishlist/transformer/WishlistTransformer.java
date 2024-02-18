@@ -6,6 +6,8 @@ import com.pranav.wishlist.model.Wishlist;
 
 public class WishlistTransformer {
 
+    //Used to convert DTO->model classes and model classes->DTO
+
     public static Wishlist wishlistRequestToWishlist(WishlistRequest wishlistRequest)
     {
         return Wishlist.builder()

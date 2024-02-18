@@ -1,9 +1,8 @@
 package com.pranav.wishlist;
 
-import com.pranav.wishlist.DTO.requestDTO.UserRequest;
 import com.pranav.wishlist.DTO.requestDTO.WishlistRequest;
 import com.pranav.wishlist.DTO.responseDTO.WishlistResponse;
-import com.pranav.wishlist.configFiles.CustomUserDetailsService;
+import com.pranav.wishlist.securityConfigFiles.CustomUserDetailsService;
 import com.pranav.wishlist.model.UserInformation;
 import com.pranav.wishlist.model.Wishlist;
 import com.pranav.wishlist.model.config.User;
@@ -35,7 +34,7 @@ public class Service {
     @Autowired
     UserInformationRepo userInformationRepo;
 
-    //to store current login-user details
+    //stores current login-user details
     private static UserInformation currentUserInformation;
 
     public UserInformation getCurrentUserInformation() {
